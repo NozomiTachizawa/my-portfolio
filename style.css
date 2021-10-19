@@ -1,0 +1,170 @@
+/* header */
+.nav {
+  background-color: #455765;
+  text-align: right;
+}
+
+.nav a {
+  font-size: 24px;
+  color: whitesmoke;
+  font-family: "Abril Fatface", cursive;
+  text-decoration: none;
+  margin-right: 30px;
+}
+
+.nav a:hover {
+  font-size: 24px;
+  color: #c0c6c9;
+  font-family: "Abril Fatface", cursive;
+  text-decoration: none;
+  margin-right: 30px;
+}
+
+/* top */
+.top {
+  background-image: url(top.jpg);
+  background-repeat: repeat;
+}
+
+.top h1 {
+  font-family: "Abril Fatface", cursive;
+  font-size: 5rem;
+  color: #203744;
+  text-align: center;
+  padding-top: 20%;
+  border-bottom: 5px solid;
+}
+
+.top h2 {
+  font-family: "Abril Fatface", cursive;
+  font-size: 2rem;
+  color: #203744;
+  text-align: center;
+  padding-bottom: 20%;
+}
+
+/* Plofile */
+#first-container {
+  background-color: whitesmoke;
+}
+
+#first-container h2 {
+  padding-top: 10%;
+  margin-bottom: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  color: #203744;
+  font-size: 3rem;
+  text-align: center;
+  font-family: "Abril Fatface", cursive;
+  border-bottom: 2px solid;
+}
+
+.contents {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 1000px) {
+  .grid {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr;
+  }
+}
+
+.item h1 {
+  font-family: "Abril Fatface", cursive;
+  color: #203744;
+}
+
+.content {
+  position: relative;
+}
+
+.illust {
+  width: 150px;
+  margin: 50px 150px;
+}
+
+.illust:hover {
+  opacity: 0.5;
+}
+
+.card {
+  position: absolute;
+  top: 70px;
+  left: 50px;
+}
+
+.answer {
+  font-family: "Klee One", cursive;
+  color: #203744;
+  border-bottom: 1px solid;
+}
+
+.text {
+  font-family: "Klee One", cursive;
+}
+
+/* Gallery */
+#second-container {
+  background-color: whitesmoke;
+}
+
+#second-container h2 {
+  padding-top: 10%;
+  margin-bottom: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  color: #203744;
+  font-size: 3rem;
+  text-align: center;
+  font-family: "Abril Fatface", cursive;
+  border-bottom: 2px solid;
+}
+
+#slide {
+  display: block;
+  margin-left: auto;
+  margin-right: auto 
+}
+
+#slide-text {
+  text-align: center;
+  font-family: "Klee One", cursive;
+  margin-top: 10px;
+}
+
+.changer {
+  text-align: center;
+  padding-bottom: 10%;
+}
+
+.changer span {
+  margin-left: 200px;
+  margin-right: 200px;
+  color: #203744;
+  font-weight: bolder;
+}
+
+.changer span:hover {
+  margin-left: 200px;
+  margin-right: 200px;
+  color: #53727d;
+  font-weight: bolder;
+}
+
+/* footer */
+.footer {
+  background-color: #455765;
+  font-family: "Nanum Myeongjo", serif;
+  color: whitesmoke;
+  text-align: center;
+}

@@ -6,11 +6,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
     <link rel="stylesheet" href="style.css" />
-    <title>My Portfolio</title>
+    <!--Google font-->
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Klee+One&display=swap" rel="stylesheet">
+    <title>Portfolio NOZOMI Tachizawa</title>
   </head>
   <body>
-    <h1>ポートフォリオサイト</h1>
-    <div></div>
+    <!--Plofile と Gallery に飛べるページ内リンク-->
+    <header class="nav">
+      <a href="#first-container">Plofile</a>
+      <a href="#second-container">Gallery</a>
+    </header>
+    <!--サイトタイトル-->
+    <div class="top">
+      <h1>Nozomi Tachizawa</h1>
+      <h2>~ Portfolio Site ~</h2>
+    </div>
+    <!--Plofile 6つのコンテンツと花のイラスト-->    <div id="first-container">
+      <h2>Plofile</h2>
+      <div class="contents grid">
+        <div class="item">
+          <h1 id="title1">Birthday</h1>
+          <div class="content" id="content1">
+            <img src="content.png" alt="花" class="illust" id="illust1">
+          </div>
+        </div>
+        <div class="item">
+          <h1 id="title2">Home Town</h1>
+          <div class="content" id="content2">
+            <img src="content.png" alt="花" class="illust" id="illust2">
+          </div>
+        </div>
+        <div class="item">
+          <h1 id="title3">University</h1>
+          <div class="content" id="content3">
+            <img src="content.png" alt="花" class="illust" id="illust3">
+          </div>
+        </div>
+        <div class="item">
+          <h1 id="title4">Favorite</h1>
+          <div class="content" id="content4">
+            <img src="content.png" alt="花" class="illust" id="illust4">
+          </div>
+        </div>
+        <div class="item">
+          <h1 id="title5">Hobby</h1>
+          <div class="content" id="content5">
+            <img src="content.png" alt="花" class="illust" id="illust5">
+          </div>
+        </div>
+        <div class="item">
+          <h1 id="title6">Music</h1>
+          <div class="content" id="content6">
+            <img src="content.png" alt="花" class="illust" id="illust6">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Gallery 写真のスライドショー-->
+    <div id="second-container">
+      <h2>Gallery</h2>
+      <div class="photo">
+        <img src="toyota.jpg" alt="豊田市航空写真" id="slide">
+        <p id="slide-text">私の住む街豊田はこんなところです。</p>
+        <div class="changer">
+          <span id="back-button">＜＜ back</span>
+          <span id="next-button">next ＞＞</span>
+        </div>
+      </div>
+    </div>
+    <!--footer 権利明記-->
+    <footer class="footer">
+      ©Nozomi TACHIZAWA all right reserve
+    </footer>
     <script src="main.js"></script>
   </body>
 </html>

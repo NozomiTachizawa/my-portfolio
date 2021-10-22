@@ -130,7 +130,8 @@
   border-bottom: 2px solid;
 }
 
-#slide {
+#slide-img {
+  height: 300px;
   display: block;
   margin-left: auto;
   margin-right: auto 

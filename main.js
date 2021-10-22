@@ -12,6 +12,12 @@ const illust4 = document.getElementById("illust4");
 const illust5 = document.getElementById("illust5");
 const illust6 = document.getElementById("illust6");
 
+const nextButton = document.getElementById("next-button");
+const backButton = document.getElementById("back-button");
+const slideImg = document.getElementById("slide-img");
+const slideText = document.getElementById("slide-text");
+
+
 
 // birthday
 const answer1 = document.createElement("h3")
@@ -147,3 +153,47 @@ illust6.onmouseout = function() {
 }
 
 // スライド
+
+// slideImg の中身を変えるための配列
+const img_src = ["toyota.jpg", "meisi.jpg", "cat.JPG", "manga.jpg"];
+let num1 = 0; // 0 (= "toyota.jpg") からスタート
+
+// slideText の中身を変えるための配列
+const slide_text = ["私の住む街豊田はこんなところです。", "私の通う名古屋市立大学滝子キャンパスです。圧倒的森！", "先日行った猫カフェのごはんタイムのワンショット。", "自宅本棚の写真です。マンガでぎっしり！"];
+let num2 = 0; // 0 (= "私の住む街豊田はこんなところです。") からスタート
+
+// nextButton をクリックすると slideImg と slideText 配列の次のものが表示される
+nextButton.onclick = function() {
+    if(num1 === 3) {
+        num1 = 3;
+    } else {
+        num1 ++;
+    }
+
+    if(num2 === 3) {
+        num2 = 3;
+    } else {
+        num2 ++;
+    }
+
+    slideImg.src = img_src[num1];
+    slideText.textContent = slide_text[num2];
+}
+
+// nextButton をクリックすると slideImg と slideText 配列の一つ前のものが表示される
+backButton.onclick = function() {
+    if(num1 === 0) {
+        num1 = 0;
+    } else {
+        num1 --;
+    }
+
+    if(num2 === 0) {
+        num2 = 0;
+    } else {
+        num2 --;
+    }
+
+    slideImg.src = img_src[num1];
+    slideText.textContent = slide_text[num2];
+}
